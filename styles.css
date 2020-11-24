@@ -3,7 +3,8 @@ html, body {
 }
 
 .top-bar{
-    padding: 1em 2em;
+    padding: 0.5em 2em 0.5em 2em;
+    background-color: transparent;
 }
 
 .btn.btn-light{
@@ -22,7 +23,18 @@ html, body {
 }
 
 .navbar{
-    padding-top: 8em;
+    padding-top: 7em;
+}
+
+.active .nav-link{
+    background-color: #7C60FF;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.nav-item.active {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .nav-item a {
@@ -39,7 +51,7 @@ html, body {
 }
 
 .nav-item-btn{
-    padding: 1.5em 0;
+    padding: 1em 0;
 }
 
 .nav-item button{
@@ -59,7 +71,7 @@ a i{
 }
 
 .upper{
-    padding-top: 4em;
+    padding-top: 3em;
     position: relative;
 }
 
@@ -78,7 +90,7 @@ a i{
 }
 
 .lower{
-    padding: 2em 0;
+    padding-top: 2em;
 }
 
 .lower-img{
