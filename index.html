@@ -8,6 +8,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">      
         <link rel="stylesheet" href="styles.css">
     </head>
     <body class="bg-light">
@@ -22,14 +24,14 @@
         </div>
         <div class="container-fluid">
             <div class="row vh-100">
-                <div class="col-md-3 nav-col">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light h-100"> <!-- d-flex flex-column-->
+                <div class="col-md-3 nav-col d-flex">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-height"> <!-- d-flex flex-column-->
                         <!-- Links -->
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse h-100" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav h-100">
+                        <div class="collapse navbar-collapse nav-height" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav nav-height">
                                 <li class="nav-item">
                                     <svg width="70" height="70">
                                         <rect x="10" y="10" rx="10" ry="10" width="50px" height="50px"
@@ -37,73 +39,79 @@
                                         <text x="50%" y="50%" text-anchor="middle" stroke="white" stroke-width="2px" dy=".3em">JD</text>
                                     </svg>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item semi-bold" style="color: #000;">
                                     John Doe
                                 </li>
                                 <li class="nav-item">
                                     Premium Nomad
                                 </li>
-                                <li class="nav-item active">
+                                <li class="nav-item active semi-bold">
                                     <a class="nav-link text-white" href="#"><i class="fas fa-inbox"></i>Bookings</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item semi-bold">
                                     <a class="nav-link" href="#"><i class="fas fa-bed"></i>Refer and Earn</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item semi-bold">
                                     <a class="nav-link" href="#"><i class="fas fa-user-cog"></i>Account Settings</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item semi-bold">
                                     <p>Support</p>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item semi-bold">
                                     <a class="nav-link" href="#"><i class="far fa-life-ring"></i>Contact Us</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item semi-bold">
                                     <a class="nav-link" href="#"><i class="fas fa-external-link-square-alt"></i>FAQ</a>
                                 </li>
-                                <li class="nav-item mt-auto">
-                                    <a class="nav-link" href="#"><i class="fas fa-toggle-on"></i>Sign Out</a>
+                                <li class="nav-item mt-auto semi-bold">
+                                    <a class="nav-link" href="#">
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                      Sign Out
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div> 
-                <div class="col-md-9 d-flex justify-content-center info-col">
+                <div class="col-md-9 info-col">
                     <div>
                         <div class="container upper">
                             <h1>Bookings</h1>
                             <h5>Your current upcoming stays</h5>
                             <p>Please update with the properity if your travel plans should change or if you wish to make any changes to your stay.</p>
                             <a href="#"><i class="fas fa-angle-right"></i>Learn more about our premium subscription</a>
-                            <div class="container lower">
+                            <div class="container lower rounded mb-10">
                                 <div class="row">
                                     <div class="col-md-5 lower-img">
                                         <img src="package-head__image.png" alt="Logo"  class="d-inline-block align-top" height="100%" width="100%">
                                     </div>
                                     <div class="col-md-7 lower-info d-flex flex-column">
                                         <div class="container lower-info-status">
-                                            <h5>The Green View</h5>
-                                            <div class="done"><i class="fas fa-check-circle"></i>Booking request received</div>
+                                            <h5 class="semi-bold">The Green View</h5>
+                                            <div class="grey"><i class="fas fa-check-circle"></i>Booking request received</div>
                                             <div class="inprogress"><i class="fas fa-clock"></i>Awaiting confirmation from Hotel</div>
                                         </div>
                                         <div class="container lower-info-room">
-                                            <h6>Superior Premium</h6>
+                                            <h6 class="semi-bold">Superior Premium</h6>
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col-md-6">
-                                                        <p><i class="far fa-calendar-check"></i>Check-in:</p><p class="lower-info-room-text">July 9th, 2018</p>
+                                                        <p class="grey lower-info-room-details"><i class="far fa-calendar-check"></i>Check-in:</p><p class="lower-info-room-text">July 9th, 2018</p>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <p><i class="far fa-file-alt"></i>Reference:</p><p class="lower-info-room-text">#UC311K</p>
+                                                        <p class="grey lower-info-room-details"><i class="far fa-file-alt"></i>Reference:</p><p class="lower-info-room-text">#UC311K</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="container mt-auto lower-info-btn">
-                                            <button class="btn bg-light w-100 text-left">
+                                            <button class="btn bg-light w-100 text-left" style="color: #42B72A;">
                                                 <i class="fas fa-star"></i>Rate your stay
                                             </button>
-                                            <button class="btn bg-light w-100 text-left">
+                                            <button class="btn bg-light w-100 text-left grey">
                                                 <i class="fab fa-telegram-plane"></i>Email the property
                                             </button>
                                         </div>
